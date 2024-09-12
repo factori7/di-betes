@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Express</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">DeliveryExpress</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Inicia sesión</a></li>
+                <li><a href="#">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>¡Pide tu comida favorita en minutos!</h1>
+        <form class="search-bar">
+            <input type="text" placeholder="Busca tu restaurante o tienda favorita...">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Categorías de productos -->
+    <section class="categories">
+        <h2>Categorías populares</h2>
+        <div class="category-container">
+            <div class="category">
+                <img src="{{ url_for('static', filename='img/pizza.jpg') }}" alt="Pizza">
+                <p>Pizzas</p>
+            </div>
+            <div class="category">
+                <img src="{{ url_for('static', filename='img/burger.jpg') }}" alt="Hamburguesas">
+                <p>Hamburguesas</p>
+            </div>
+            <div class="category">
+                <img src="{{ url_for('static', filename='img/sushi.jpg') }}" alt="Sushi">
+                <p>Sushi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DeliveryExpress - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
